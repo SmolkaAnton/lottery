@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFA07A">
+
+    <TextView
+        android:id="@+id/pickFiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick 5!"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#191970"/>
+
+    <EditText
+        android:id="@+id/user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user2"
+        android:layout_toLeftOf="@+id/user2"
+        android:layout_toStartOf="@+id/user2"
+        android:ems="2"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/user2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user3"
+        android:layout_alignBottom="@+id/user3"
+        android:layout_toLeftOf="@+id/user3"
+        android:layout_toStartOf="@+id/user3"
+        android:ems="2"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/user3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user4"
+        android:layout_alignBottom="@+id/user4"
+        android:layout_toLeftOf="@+id/user4"
+        android:layout_toStartOf="@+id/user4"
+        android:ems="2"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/user4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user5"
+        android:layout_alignBottom="@+id/user5"
+        android:layout_toLeftOf="@+id/user5"
+        android:layout_toStartOf="@+id/user5"
+        android:ems="2"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/user5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickFiveText"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@+id/pickFiveText"
+        android:layout_toRightOf="@+id/pickFiveText"
+        android:ems="2"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/gen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user1"
+        android:layout_alignStart="@+id/user1"
+        android:layout_below="@+id/user1"
+        android:layout_marginTop="43dp"
+        android:ems="2"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/gen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gen1"
+        android:layout_alignBottom="@+id/gen1"
+        android:layout_toEndOf="@+id/gen1"
+        android:layout_toRightOf="@+id/gen1"
+        android:ems="2"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/gen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gen2"
+        android:layout_alignBottom="@+id/gen2"
+        android:layout_toEndOf="@+id/gen2"
+        android:layout_toRightOf="@+id/gen2"
+        android:ems="2"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/gen4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gen3"
+        android:layout_alignBottom="@+id/gen3"
+        android:layout_alignEnd="@+id/pickFiveText"
+        android:layout_alignRight="@+id/pickFiveText"
+        android:ems="2"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/gen5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gen4"
+        android:layout_alignBottom="@+id/gen4"
+        android:layout_toEndOf="@+id/pickFiveText"
+        android:layout_toRightOf="@+id/pickFiveText"
+        android:ems="2"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gen1"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="56dp"
+        android:layout_toLeftOf="@+id/gen3"
+        android:layout_toStartOf="@+id/gen3"
+        android:text="Money won: "
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/money"
+        android:layout_alignLeft="@+id/pickFiveText"
+        android:layout_alignStart="@+id/pickFiveText"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:clickable="false"
+        android:ems="8"
+        android:focusable="false"
+        android:id="@+id/moneyET" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/moneyET"
+        android:layout_alignStart="@+id/moneyET"
+        android:layout_below="@+id/money"
+        android:layout_marginTop="21dp"
+        android:text="Generate"
+        android:onClick="generatePressed"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop!"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/generate"
+        android:onClick="stopPressed"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop"
+        android:layout_centerHorizontal="true"
+        android:text="Rules"
+        android:onClick="pickFiveRulesPressed"/>
+
+</RelativeLayout>

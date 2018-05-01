@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.lottery.MainActivity"
+    android:background="#ADD8E6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lottery!"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF00FF"
+        android:id="@+id/title"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a game to play!"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:textColor="#FF000000"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/lottoballs"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/powerBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powerball!"
+        android:onClick="powerballPressed"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image"/>
+
+    <Button
+        android:id="@+id/pick5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick 5!"
+        android:onClick="pickFivePressed"
+        android:layout_below="@id/powerBall"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/megaMillions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mega Millions"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pick5"
+        android:onClick="megaMillionsPressed"/>
+
+
+</RelativeLayout>
