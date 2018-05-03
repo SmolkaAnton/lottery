@@ -128,10 +128,10 @@ public class MegaMillionsClass extends AppCompatActivity {
         int gMM = Integer.parseInt(generatePB);
 
         if(u1==g1) {
-            matches ++;
+            matches++;
         }
         else if(u2==g2) {
-            matches ++;
+            matches++;
         }
         else if(u3==g3) {
             matches++;
