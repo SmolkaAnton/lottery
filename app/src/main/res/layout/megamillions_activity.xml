@@ -192,7 +192,8 @@
         android:layout_height="wrap_content"
         android:text="Rules"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/generate"/>
+        android:layout_below="@id/generate"
+        android:onClick="megaMillionsRulesPressed"/>
 
 
 </RelativeLayout>

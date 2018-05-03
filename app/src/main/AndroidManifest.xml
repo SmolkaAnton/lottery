@@ -16,11 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PowerballClass"/>
-        <activity android:name=".PowerBallRulesClass"/>
-        <activity android:name=".PickFiveClass"/>
-        <activity android:name=".PickFiveRulesClass"/>
-        <activity android:name=".MegaMillionsClass"/>
+        <activity android:name=".PowerballClass"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PowerBallRulesClass"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PickFiveClass"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PickFiveRulesClass"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MegaMillionsClass"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MegaMillionsRulesClass"
+            android:screenOrientation="portrait"/>
 
     </application>
 
